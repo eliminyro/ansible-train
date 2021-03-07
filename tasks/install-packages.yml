@@ -1,0 +1,8 @@
+---
+
+# File ./tasks/install-packages.yml
+
+- name: Install packages for both RPM-based and DEB-based servers
+  ansible.builtin.package:
+    name: "{{ apache }}"
+    state: latest

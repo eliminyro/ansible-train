@@ -1,7 +1,8 @@
 all:
-  deb:        
-    hosts:
-      ubuntu-bot
-  rpm:
-    hosts:
-      centos-bot
+  children:      
+    deb:        
+      hosts:
+        ubuntu-bot
+    rpm:
+      hosts:
+        centos-bot

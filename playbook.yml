@@ -1,0 +1,21 @@
+---
+- hosts: deb
+  vars_files:
+    - vars/deb.yml
+  gather_facts: no
+  remote_user: ubuntu
+  become: true
+
+  tasks:
+  - include: tasks/install-packages.yml
+
+- hosts: rpm
+  vars_files:
+    - vars/rpm.yml
+  gather_facts: no
+  remote_user: centos
+  become: true
+
+  tasks:
+  - include: tasks/install-packages.yml
+
