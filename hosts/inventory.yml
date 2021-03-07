@@ -1,0 +1,7 @@
+all:
+  deb:        
+    hosts:
+      ubuntu-bot
+  rpm:
+    hosts:
+      centos-bot
