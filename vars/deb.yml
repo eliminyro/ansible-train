@@ -1,1 +1,4 @@
 apache: apache2
+http_host: ubuntu-bot
+conf_path: /etc/apache2/sites-available/ubuntu-bot.conf
+app_user: www-data
