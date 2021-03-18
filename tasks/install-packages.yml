@@ -6,3 +6,8 @@
   ansible.builtin.package:
     name: "{{ apache }}"
     state: latest
+- name: Enalbe the damn service and start it
+  ansible.buildin.service:
+    name: "{{ apache }}"
+    enabled: yes
+    state: started
