@@ -3,7 +3,7 @@
   vars_files:
     - vars/deb.yml
   gather_facts: no
-  remote_user: ubuntu
+  remote_user: devops
   become: true
 
   tasks:
@@ -15,7 +15,7 @@
   vars_files:
     - vars/rpm.yml
   gather_facts: no
-  remote_user: centos
+  remote_user: devops
   become: true
 
   tasks:
