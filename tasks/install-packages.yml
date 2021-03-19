@@ -7,7 +7,7 @@
     name: "{{ apache }}"
     state: latest
 
-- name: Enable the damn service and start it
+- name: Enable the service and start it
   ansible.builtin.service:
     name: "{{ apache }}"
     enabled: yes
